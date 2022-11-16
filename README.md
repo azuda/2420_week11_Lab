@@ -6,6 +6,10 @@
 
 ## Backup Script
 
+**config.sh** - put this file in /opt/backup/
+
+*dir to backup* and the *destination of backup* are specified in config.sh
+
 **backup** - put this script in /opt/backup/
 
 **backup.service** - put this file in /etc/systemd/system/
