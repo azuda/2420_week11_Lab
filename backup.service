@@ -1,0 +1,9 @@
+[Unit]
+Description=use rsync to backup dir/dirs to a backup server, specified in a config.sh file
+
+[Service]
+type=oneshot
+ExecStart=/opt/backup/backup
+
+[Install]
+WantedBy=multi-user.target
