@@ -1,9 +1,14 @@
 [Unit]
-Description=Timer to perform backup service every day at 01:00
+Description=Timer to perform backup service every Friday at 01:00
 
 [Timer]
-OnCalendar=*-*-*- 00:00:59
+OnCalendar=Friday 01:00
+AccuracySec=1h
 Persistent=true
+
+[Service]
+Type=simple
+ExecStart=backup
 
 [Install]
 WantedBy=timers.target
