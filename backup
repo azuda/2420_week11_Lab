@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ~/backup/config.sh
+. /opt/backup/config.sh
 
 rsync -ir ${dirs} aaron@${ip}:~/backups_destination -e "ssh -i ~/.ssh/s1_key"
 echo "Performing backup of ${dirs} to ${ip}"
