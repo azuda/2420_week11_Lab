@@ -37,7 +37,8 @@ Performs a backup to server of specified directory every Friday at 01:00.
 
   1. Put this file in /etc/systemd/system/
   2. Enable the timer: `systemctl enable backup.timer`
-  3. Verify timer is active: `systemcl status backup.service`
+  3. Start the timer: `systemctl start --now backup.timer`
+  4. Verify timer is active: `systemcl status backup.service`
   Output should resemble the following:
 ![status_backup.timer](images/status_backup.timer.png)
 
