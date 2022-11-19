@@ -1,8 +1,8 @@
 [Unit]
-Description=use rsync to backup dir/dirs to a backup server, specified in a config.sh file
+Description=use rsync to backup dirs to destination backup server, specified in config.sh
 
 [Service]
-type=oneshot
+Type=oneshot
 ExecStart=/opt/backup/backup
 
 [Install]
