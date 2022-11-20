@@ -48,4 +48,4 @@ Performs a backup to server of specified directory every Friday at 01:00.
 
 **weather.service** - put this file in /etc/systemd/system/
 
-**weather.service** - put this file in /etc/systemd/system/
+**weather.timer** - put this file in /etc/systemd/system/
